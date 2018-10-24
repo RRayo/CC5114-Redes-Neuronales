@@ -3,7 +3,7 @@ import unittest
 from perceptron_class import Perceptron, p_sum
 
 
-class TestPerceptronAnd(unittest.TestCase):
+class Test_p_and(unittest.TestCase):
 
     def setUp(self):
         """Call before every test case."""
@@ -16,7 +16,7 @@ class TestPerceptronAnd(unittest.TestCase):
         assert self.p_and.feed([1, 1]) == 1, "p_and not calculating values correctly"
 
 
-class TestPerceptronOr(unittest.TestCase):
+class Test_p_or(unittest.TestCase):
 
     def setUp(self):
         """Call before every test case."""
@@ -29,7 +29,7 @@ class TestPerceptronOr(unittest.TestCase):
         assert self.p_or.feed([1, 1]) == 1, "p_or not calculating values correctly"
 
 
-class TestPerceptronNand(unittest.TestCase):
+class Test_p_nand(unittest.TestCase):
 
     def setUp(self):
         """Call before every test case."""
@@ -42,7 +42,7 @@ class TestPerceptronNand(unittest.TestCase):
         assert self.p_nand.feed([1, 1]) == 0, "p_nand not calculating values correctly"
 
 
-class TestPerceptronNot(unittest.TestCase):
+class Test_p_not(unittest.TestCase):
 
     def setUp(self):
         """Call before every test case."""
@@ -53,7 +53,7 @@ class TestPerceptronNot(unittest.TestCase):
         assert self.p_not.feed(0) == 1, "p_not not calculating values correctly"
 
 
-class TestPerceptronSum(unittest.TestCase):
+class Test_p_sum(unittest.TestCase):
 
     def test_tabla_verdad(self):
         assert p_sum(0, 0)[0] == 0, "p_sum not calculating values correctly"
