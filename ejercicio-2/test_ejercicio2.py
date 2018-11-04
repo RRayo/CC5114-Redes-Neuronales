@@ -20,16 +20,39 @@ class TestTraining(unittest.TestCase):
 
     def test_noTraining(self):
         # numero de veces entrenado
-
-        # real_out =
+        N = 0
         # comparar cuantos se obtuvieron correctamente
 
+        real_out = numpy.array([])
+        desired_out = numpy.array([])
 
+        for p in self.random_puntos:
+            real_out.append(self.perceptron.feed(p))
+            desired_out.append(1 if p[1] > self.funcion(p[0]) else 0)
 
-        assert self.p_and.feed([0, 0]) == 0, "p_and not calculating values correctly"
-        assert self.p_and.feed([0, 1]) == 0, "p_and not calculating values correctly"
-        assert self.p_and.feed([1, 0]) == 0, "p_and not calculating values correctly"
-        assert self.p_and.feed([1, 1]) == 1, "p_and not calculating values correctly"
+        total = len(self.random_puntos)
+        aciertos = numpy.sum(real_out == desired_out)
+
+        assert aciertos < total * 0.5, "aciertos son mayores al 50% del total"
 
     def test_training_20(self):
-        1
+        # numero de veces entrenado
+        N = 20
+        for i in range(N):
+            for x, y in self.random_puntos:
+                desired_out = 1 if y > self.funcion(x) else 0
+                self.perceptron.train(desired_out, [x, y])
+
+        # comparar cuantos se obtuvieron correctamente
+
+        real_out = []
+        desired_out = []
+
+        for p in self.random_puntos:
+            real_out.append(self.perceptron.feed(p))
+            desired_out.append(1 if p[1] > self.funcion(p[0]) else 0)
+
+        total = len(self.random_puntos)
+        aciertos = numpy.sum(real_out == desired_out)
+
+        assert aciertos > total * 0.6, "aciertos son menores al 60% del total"
