@@ -1,12 +1,10 @@
-# TODO unittest training (?) -> ver si se usa
-
 import numpy as np
 
 from neuron import Neuron
 from neuron_layer import NewronLayer
 
 
-class NewronNetwork:
+class NeuronNetwork:
 
     def __init__(self, layers):
         self.layers = layers

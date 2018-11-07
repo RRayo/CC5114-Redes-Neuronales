@@ -5,9 +5,10 @@ import numpy as np
 from activation_functions import sigmoid
 from neuron import Neuron
 from neuron_layer import NewronLayer
-from neuron_network import NewronNetwork
+from neuron_network import NeuronNetwork
 
 
+# TODO agregar ejemplos del link http://toritris.weebly.com/perceptron-2-logical-operations.html (usar el layer_const)
 class Test1(unittest.TestCase):
 
     def setUp(self):
@@ -17,7 +18,7 @@ class Test1(unittest.TestCase):
         self.neuron_2 = Neuron([0.3], 0.4, fun)
         self.layer_1 = NewronLayer([self.neuron_1])
         self.layer_2 = NewronLayer([self.neuron_2])
-        self.network = NewronNetwork([self.layer_1, self.layer_2])
+        self.network = NeuronNetwork([self.layer_1, self.layer_2])
 
     def test_training(self):
         inputs = [1, 1]
@@ -56,7 +57,7 @@ class Test2(unittest.TestCase):
         self.neuron_4 = Neuron([0.4, 0.2], 0.6, fun)
         self.layer_1 = NewronLayer([self.neuron_1, self.neuron_2])
         self.layer_2 = NewronLayer([self.neuron_3, self.neuron_4])
-        self.network = NewronNetwork([self.layer_1, self.layer_2])
+        self.network = NeuronNetwork([self.layer_1, self.layer_2])
 
     def test_training(self):
         inputs = [1, 1]
@@ -98,10 +99,7 @@ class Test2(unittest.TestCase):
         assert np.abs(n4_w - n4_desired_w)[0] < epsilon, "incorrect weight_1 neuron_4"
         assert np.abs(n4_w - n4_desired_w)[1] < epsilon, "incorrect weight_2 neuron_4"
 
-
-
         assert np.abs(n1_b - n1_desired_b) < epsilon, "incorrect bias neuron_1"
         assert np.abs(n2_b - n2_desired_b) < epsilon, "incorrect bias neuron_2"
         assert np.abs(n3_b - n3_desired_b) < epsilon, "incorrect bias neuron_3"
         assert np.abs(n4_b - n4_desired_b) < epsilon, "incorrect bias neuron_4"
-
