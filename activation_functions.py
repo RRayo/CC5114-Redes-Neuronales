@@ -9,3 +9,7 @@ def perceptron(x):
     if x <= 0:
         return 0
     return 1
+
+
+def relu(x):
+    return max(0, x)
