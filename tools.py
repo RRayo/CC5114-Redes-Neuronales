@@ -22,14 +22,22 @@ def net_constructor(shape, fun):
         neurons = []
         # cuantas neuronas hay en este layer
         for i in range(val):
-            bias = np.random.uniform(-2, 2)
-            weights = np.random.uniform(-2, 2, aux)
+            random_sign = 1 if np.random.rand() < 0.5 else -1
+            bias = np.random.uniform(0.5, 2) * random_sign
+            weights = np.random.uniform(0.5, 2, aux) * random_sign_array(aux)
             neurons.append(Neuron(weights, bias, fun))
 
         layers.append(NeuronLayer(neurons))
 
         aux = val
     return NeuronNetwork(layers)
+
+
+def random_sign_array(shape):
+    array = np.random.rand(shape)
+    array[array > 0.5] = 1
+    array[array <= 0.5] = -1
+    return array
 
 
 def normalize_data_fun(data_low, data_high, n_low, n_high):
@@ -44,3 +52,15 @@ def denormalize_data_fun(data_low, data_high, n_low, n_high):
 # f2 = denormalize_data_fun(-10, 10, 0, 1)
 # print(f(5))
 # print(f2(0.75))
+
+
+def mean_absolute_error(expected_out, out):
+    expected_out = np.array(expected_out)
+    out = np.array(out)
+    return np.sum(np.abs(expected_out - out)) / len(expected_out)
+
+
+def mean_squared_error(expected_out, out):
+    expected_out = np.array(expected_out)
+    out = np.array(out)
+    return np.sum(np.square(expected_out - out)) / len(expected_out)
