@@ -8,7 +8,6 @@ from neuron_layer import NeuronLayer
 from neuron_network import NeuronNetwork
 
 
-# TODO agregar ejemplos del link http://toritris.weebly.com/perceptron-2-logical-operations.html (usar el layer_const)
 class Test1(unittest.TestCase):
 
     def setUp(self):
