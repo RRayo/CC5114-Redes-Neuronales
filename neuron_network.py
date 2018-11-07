@@ -29,20 +29,10 @@ class NewronNetwork:
         for i in range(len(self.layers) - 1, -1, -1):
 
             if last:
-                # por cada neurona del layer se calcula el error y actualiza su delta
-                for k in range(len(self.layers[i].neurons)):  # TODO refactor (meter en layers y en neurona)
-                    error = desired_outputs[k] - self.layers[i].neurons[k].output
-                    self.layers[i].neurons[k].adjust_delta(error)
+                self.layers[i].back_propagation_last_layer(desired_outputs)
                 last = False
             else:
-                # por cada neurona del layer se calcula el error y actualiza su delta
-                for k in range(len(self.layers[i].neurons)):  # TODO refactor (meter en layers y en neurona)
-                    error = 0
-                    for neuron in self.layers[i + 1].neurons: # TODO revisar si está bien
-                        # la neurona 1 del primer layer tendría un error:
-                        # n1_layer2_w1*n1_layer2_delta + n2_layer2_w2*n2_layer2_delta + ...
-                        error += neuron.weights[k] * neuron.delta
-                    self.layers[i].neurons[k].adjust_delta(error)
+                self.layers[i].back_propagation_inner_layer(self.layers[i + 1])
 
     def update_weights(self, inputs, learning_rate=0.1):
         for layer in self.layers:
