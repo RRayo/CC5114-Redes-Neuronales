@@ -19,10 +19,10 @@ class NewronNetwork:
         self.outputs = inputs
         return inputs
 
-    def train(self, inputs, desired_outputs):
+    def train(self, inputs, desired_outputs, learning_rate=0.1):
         self.feed(inputs)
         self.back_propagate_error(desired_outputs)
-        self.update_weights(inputs)
+        self.update_weights(inputs, learning_rate)
 
     def back_propagate_error(self, desired_outputs):
         last = True
