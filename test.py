@@ -3,7 +3,7 @@ from tools import *
 
 actication_fun = lambda x: x
 shape_network = (4, 3, 2, 2)
-layers = layer_const(shape=shape_network, fun=actication_fun)
+layers = net_constructor(shape=shape_network, fun=actication_fun)
 net = NeuronNetwork(layers)
 
 inputs = [1, 2, 3, 4]
