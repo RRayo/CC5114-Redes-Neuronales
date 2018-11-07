@@ -1,4 +1,5 @@
-from neuron_network import NeuronNetwork, layer_const
+from neuron_network import NeuronNetwork
+from tools import *
 
 actication_fun = lambda x: x
 shape_network = (4, 3, 2, 2)

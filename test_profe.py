@@ -4,7 +4,7 @@ import numpy as np
 
 from activation_functions import sigmoid
 from neuron import Neuron
-from neuron_layer import NewronLayer
+from neuron_layer import NeuronLayer
 from neuron_network import NeuronNetwork
 
 
@@ -16,8 +16,8 @@ class Test1(unittest.TestCase):
         fun = sigmoid
         self.neuron_1 = Neuron([0.4, 0.3], 0.5, fun)
         self.neuron_2 = Neuron([0.3], 0.4, fun)
-        self.layer_1 = NewronLayer([self.neuron_1])
-        self.layer_2 = NewronLayer([self.neuron_2])
+        self.layer_1 = NeuronLayer([self.neuron_1])
+        self.layer_2 = NeuronLayer([self.neuron_2])
         self.network = NeuronNetwork([self.layer_1, self.layer_2])
 
     def test_training(self):
@@ -55,8 +55,8 @@ class Test2(unittest.TestCase):
         self.neuron_2 = Neuron([0.3, 0.7], 0.4, fun)
         self.neuron_3 = Neuron([0.2, 0.3], 0.3, fun)
         self.neuron_4 = Neuron([0.4, 0.2], 0.6, fun)
-        self.layer_1 = NewronLayer([self.neuron_1, self.neuron_2])
-        self.layer_2 = NewronLayer([self.neuron_3, self.neuron_4])
+        self.layer_1 = NeuronLayer([self.neuron_1, self.neuron_2])
+        self.layer_2 = NeuronLayer([self.neuron_3, self.neuron_4])
         self.network = NeuronNetwork([self.layer_1, self.layer_2])
 
     def test_training(self):
