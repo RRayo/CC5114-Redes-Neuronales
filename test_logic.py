@@ -6,7 +6,6 @@ from activation_functions import *
 from tools import net_constructor, mean_squared_error
 
 
-# TODO meter OR y XOR
 class TestAND(unittest.TestCase):
 
     def setUp(self):
