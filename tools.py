@@ -64,3 +64,55 @@ def mean_squared_error(expected_out, out):
     expected_out = np.array(expected_out)
     out = np.array(out)
     return np.sum(np.square(expected_out - out)) / len(expected_out)
+
+
+def process_poker_file(filename, MAX=50000):
+    inputs = []
+    outputs = []
+    with open(filename, "r") as file:
+        aux = 0
+        for line in file:
+            array = list(map(int, line.split(",")))
+            inputs.append(array[:-1])
+            out = [0] * 10
+            out[array[-1]] = 1
+            outputs.append(out)
+            aux += 1
+            if aux > MAX:
+                break
+    return inputs, outputs
+
+
+def process_iris_file(filename):
+    inputs = []
+    outputs = []  # 0=Iris-setosa, 1=Iris-versicolor, 2=Iris-virginica
+    max_in = -1
+    min_in = 1000
+    with open(filename, "r") as file:
+        for line in file:
+            array = line.split(",")
+            ins = list(map(float, array[:-1]))
+            local_max = max(ins)
+            if local_max > max_in:
+                max_in = local_max
+            local_min = min(ins)
+            if local_min < min_in:
+                min_in = local_min
+
+            flower = array[-1]
+            out = [0] * 3
+            if "setosa" in flower:
+                out[0] = 1
+            elif "versicolor" in flower:
+                out[1] = 1
+            else:
+                out[2] = 1
+
+            inputs.append(ins)
+            outputs.append(out)
+    normalize_fun = normalize_data_fun(min_in, max_in, 0, 1)
+
+    for i in range(len(inputs)):
+        inputs[i] = [normalize_fun(x) for x in inputs[i]]
+
+    return inputs, outputs, min_in, max_in
