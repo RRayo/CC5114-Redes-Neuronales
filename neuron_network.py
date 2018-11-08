@@ -1,9 +1,3 @@
-import numpy as np
-
-from neuron import Neuron
-from neuron_layer import NeuronLayer
-
-
 class NeuronNetwork:
 
     def __init__(self, layers):
