@@ -1,8 +1,8 @@
 import numpy as np
 
-from neuron import Neuron
-from neuron_layer import NeuronLayer
-from neuron_network import NeuronNetwork
+from neuron_net.neuron import Neuron
+from neuron_net.neuron_layer import NeuronLayer
+from neuron_net.neuron_network import NeuronNetwork
 
 
 def net_constructor(shape, fun):
