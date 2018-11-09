@@ -11,7 +11,7 @@ FOLDER_GRAPHS = os.path.join(os.path.dirname(__file__), "results", "")
 
 
 def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activation_fun=sigmoid, net_shape=(4, 4, 4, 3),
-                 learning_rate=0.5, plot=False):
+                 learning_rate=0.5, plot=False, title="", random_state=42):
     print("Creando red neuronal")
     print("Parámetros:")
     print(f"activarion function: {activation_fun.__name__}, net_shape={net_shape}, learning_rate={learning_rate}")
@@ -22,7 +22,7 @@ def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activat
     # TRAINING
 
     X_train, X_test, y_train, y_test = train_test_split(
-        inputs, outputs, test_size=0.30, random_state=42)
+        inputs, outputs, test_size=0.30, random_state=random_state)
 
     errors = []
 
@@ -43,7 +43,9 @@ def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activat
     plt.title(f"Error de red IRIS, act_fun={activation_fun.__name__} ,lr={learning_rate}, net_shape={net_shape}")
     plt.xlabel("Epochs")
     plt.ylabel("Error")
-    plt.savefig(FOLDER_GRAPHS + activation_fun.__name__ + "," + str(net_shape) + "," + str(learning_rate) + ".jpg")
+    if title == "":
+        title = activation_fun.__name__ + "," + str(net_shape) + "," + str(learning_rate) + ".jpg"
+    plt.savefig(FOLDER_GRAPHS + title)
     if plot:
         plt.show()
     plt.close()
