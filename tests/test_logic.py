@@ -1,9 +1,10 @@
 import unittest
 
-import matplotlib.pyplot as plt
-
 from activation_functions import *
 from tools import net_constructor, mean_squared_error
+
+
+# import matplotlib.pyplot as plt
 
 
 class TestAND(unittest.TestCase):
@@ -37,12 +38,12 @@ class TestAND(unittest.TestCase):
                 error_epoch += mean_squared_error(desired_outputs[k], self.network.outputs)
             error.append(error_epoch)
 
-        plt.plot(range(n), error)
-        plt.title("Error de aprendizaje red AND")
-        plt.xlabel("Epoch")
-        plt.ylabel("Error")
+        # plt.plot(range(n), error)
+        # plt.title("Error de aprendizaje red AND")
+        # plt.xlabel("Epoch")
+        # plt.ylabel("Error")
         # plt.show()
-        plt.close()
+        # plt.close()
 
         epsilon = 0.01
 
@@ -83,12 +84,12 @@ class TestOR(unittest.TestCase):
                 error_epoch += mean_squared_error(desired_outputs[k], self.network.outputs)
             error.append(error_epoch)
 
-        plt.plot(range(n), error)
-        plt.title("Error de aprendizaje red OR")
-        plt.xlabel("Epoch")
-        plt.ylabel("Error")
+        # plt.plot(range(n), error)
+        # plt.title("Error de aprendizaje red OR")
+        # plt.xlabel("Epoch")
+        # plt.ylabel("Error")
         # plt.show()
-        plt.close()
+        # plt.close()
 
         epsilon = 0.01
 
@@ -130,18 +131,17 @@ class TestXOR(unittest.TestCase):
                 error_epoch += mean_squared_error(desired_outputs[k], self.network.outputs)
             error.append(error_epoch)
 
-        plt.plot(range(n), error)
-        plt.title("Error de aprendizaje red XOR")
-        plt.xlabel("Epoch")
-        plt.ylabel("Error")
-        plt.show()
-        plt.close()
+        # plt.plot(range(n), error)
+        # plt.title("Error de aprendizaje red XOR")
+        # plt.xlabel("Epoch")
+        # plt.ylabel("Error")
+        # plt.show()
+        # plt.close()
 
         epsilon = 0.3
 
         for i in range(len(inputs)):
             self.network.feed(inputs[i])
             diff = mean_squared_error(self.network.outputs, desired_outputs[i])
-            print(diff)
             assert diff < epsilon, f"incorrect output for input XOR {inputs[i]}, " \
                                    f"outputs: {self.network.outputs}"
