@@ -10,7 +10,7 @@ from tools import *
 FOLDER_GRAPHS = os.path.join(os.path.dirname(__file__), "results", "")
 
 
-def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activation_fun=sigmoid, net_shape=(4, 4, 4, 3),
+def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activation_fun=sigmoid, net_shape=(4, 4, 3),
                  learning_rate=0.5, plot=False, title="", random_state=42):
     print("Creando red neuronal")
     print("Parámetros:")
@@ -37,14 +37,15 @@ def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activat
         errors.append(error_epoch)
 
     end_time = time()
-    print(f"\nTiempo transcurrido entrenamiento: {end_time - init_time}\n\n")
+    print(f"Tiempo transcurrido entrenamiento: {end_time - init_time}\n\n")
 
     plt.plot(range(n_experiments), errors)
     plt.title(f"Error de red IRIS, act_fun={activation_fun.__name__} ,lr={learning_rate}, net_shape={net_shape}")
     plt.xlabel("Epochs")
     plt.ylabel("Error")
     if title == "":
-        title = activation_fun.__name__ + "," + str(net_shape) + "," + str(learning_rate) + ".jpg"
+        title = activation_fun.__name__ + str(net_shape).replace(", ", "") + str(learning_rate).replace(".",
+                                                                                                        "") + ".jpg"
     plt.savefig(FOLDER_GRAPHS + title)
     if plot:
         plt.show()
