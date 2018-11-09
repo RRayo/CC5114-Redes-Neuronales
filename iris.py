@@ -1,47 +1,49 @@
+import os
 from time import time
 
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 
 from activation_functions import *
 from tools import *
-from sklearn.model_selection import train_test_split
 
-iris_filename = "data/iris-data.txt"
-
-inputs, outputs, min_in, max_in = process_iris_file(iris_filename)
-
-fun = sigmoid
-net_shape = (4, 4, 4, 3)
-learning_rate = 0.5
-
-network = net_constructor(net_shape, fun)
-
-# TRAINING
-
-X_train, X_test, y_train, y_test = train_test_split(
-    inputs, outputs, test_size=0.30, random_state=42)
+FOLDER_GRAPHS = os.path.join(os.path.dirname(__file__), "results", "")
 
 
-n = 1000
-errors = []
+def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activation_fun=sigmoid, net_shape=(4, 4, 4, 3),
+                 learning_rate=0.5, plot=False):
+    print("Creando red neuronal")
+    print("Parámetros:")
+    print(f"activarion function: {activation_fun.__name__}, net_shape={net_shape}, learning_rate={learning_rate}")
 
-init_time = time()
+    inputs, outputs, min_in, max_in = process_iris_file(iris_filename)
+    network = net_constructor(net_shape, activation_fun)
 
-for i in range(n):
-    print(f"Training epoch {i}")
-    error_epoch = 0
-    for k in range(len(X_train)):
-        network.train(X_train[k], y_train[k], learning_rate=learning_rate)
-        error_epoch += mean_squared_error(y_train[k], network.outputs)
-    errors.append(error_epoch)
+    # TRAINING
 
-end_time = time()
-print(f"\nTiempo transcurrido entrenamiento: {end_time - init_time}")
+    X_train, X_test, y_train, y_test = train_test_split(
+        inputs, outputs, test_size=0.30, random_state=42)
 
+    errors = []
 
-plt.plot(range(n), errors)
-plt.title(f"Error de red IRIS, lr={learning_rate}")
-plt.xlabel("Epochs")
-plt.ylabel("Error")
-plt.show()
-plt.close()
+    init_time = time()
+
+    print(f"Training epochs")
+    for i in range(n_experiments):
+        error_epoch = 0
+        for k in range(len(X_train)):
+            network.train(X_train[k], y_train[k], learning_rate=learning_rate)
+            error_epoch += mean_squared_error(y_train[k], network.outputs)
+        errors.append(error_epoch)
+
+    end_time = time()
+    print(f"\nTiempo transcurrido entrenamiento: {end_time - init_time}\n\n")
+
+    plt.plot(range(n_experiments), errors)
+    plt.title(f"Error de red IRIS, act_fun={activation_fun.__name__} ,lr={learning_rate}, net_shape={net_shape}")
+    plt.xlabel("Epochs")
+    plt.ylabel("Error")
+    plt.savefig(FOLDER_GRAPHS + activation_fun.__name__ + "," + str(net_shape) + "," + str(learning_rate) + ".jpg")
+    if plot:
+        plt.show()
+    plt.close()
