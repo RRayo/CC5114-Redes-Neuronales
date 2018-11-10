@@ -1,86 +1,56 @@
-Creando red neuronal
-Parámetros:
+DISTINTAS REDES
+
 activarion function: sigmoid, net_shape=(4, 3), learning_rate=0.5
-Training epochs
+Tiempo: 19.44320321083069
 
-Tiempo transcurrido entrenamiento: 19.253106117248535
-
-
-Creando red neuronal
-Parámetros:
 activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.5
-Training epochs
+Tiempo: 44.178356409072876
 
-Tiempo transcurrido entrenamiento: 48.19976258277893
-
-
-Creando red neuronal
-Parámetros:
 activarion function: sigmoid, net_shape=(4, 1, 1, 3), learning_rate=0.5
-Training epochs
+Tiempo: 32.27794027328491
 
-Tiempo transcurrido entrenamiento: 36.27507948875427
-
-
-Creando red neuronal
-Parámetros:
 activarion function: sigmoid, net_shape=(4, 3, 4, 3), learning_rate=0.5
-Training epochs
+Tiempo: 66.7448296546936
 
-Tiempo transcurrido entrenamiento: 72.54016208648682
-
-
-Creando red neuronal
-Parámetros:
 activarion function: sigmoid, net_shape=(4, 4, 4, 3), learning_rate=0.5
-Training epochs
-
-Tiempo transcurrido entrenamiento: 100.82478284835815
+Tiempo: 73.77623867988586
 
 
-Creando red neuronal
-Parámetros:
-activarion function: sigmoid, net_shape=(4, 4, 4, 3), learning_rate=0.1
-Training epochs
 
-Tiempo transcurrido entrenamiento: 77.79681754112244
+DISTINTOS LEARNING RATES
 
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.1
+Tiempo: 38.31619739532471
 
-Creando red neuronal
-Parámetros:
-activarion function: sigmoid, net_shape=(4, 4, 4, 3), learning_rate=0.3
-Training epochs
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.3
+Tiempo: 40.83634305000305
 
-Tiempo transcurrido entrenamiento: 74.2303454875946
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.5
+Tiempo: 44.00461435317993
 
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.8
+Tiempo: 48.63386082649231
 
-Creando red neuronal
-Parámetros:
-activarion function: sigmoid, net_shape=(4, 4, 4, 3), learning_rate=0.5
-Training epochs
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=1
+Tiempo: 53.2530574798584
 
-Tiempo transcurrido entrenamiento: 70.66413021087646
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=3
+Tiempo: 52.598018407821655
 
 
-Creando red neuronal
-Parámetros:
-activarion function: sigmoid, net_shape=(4, 4, 4, 3), learning_rate=0.8
-Training epochs
+DISTINTOS INPUTS
 
-Tiempo transcurrido entrenamiento: 72.35108399391174
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.5
+Tiempo: 50.95561718940735
 
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.5
+Tiempo: 48.445777893066406
 
-Creando red neuronal
-Parámetros:
-activarion function: sigmoid, net_shape=(4, 4, 4, 3), learning_rate=1
-Training epochs
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.5
+Tiempo: 49.17081642150879
 
-Tiempo transcurrido entrenamiento: 87.7770357131958
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.5
+Tiempo: 48.4737811088562
 
-
-Creando red neuronal
-Parámetros:
-activarion function: sigmoid, net_shape=(4, 4, 4, 3), learning_rate=3
-Training epochs
-
-Tiempo transcurrido entrenamiento: 101.24887752532959
+activarion function: sigmoid, net_shape=(4, 4, 3), learning_rate=0.5
+Tiempo: 48.03983116149902
