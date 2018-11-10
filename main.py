@@ -27,6 +27,9 @@ def main():
         random_state = np.random.randint(1, 100)
         process_iris(title=f"red_basica_{i}_{random_state}", random_state=random_state)
 
+    print("CLASES ORDENADAS")
+    process_iris(ordered=True, title="ordered")
+
 
 if __name__ == '__main__':
     main()

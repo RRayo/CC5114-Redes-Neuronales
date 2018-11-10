@@ -11,7 +11,7 @@ FOLDER_GRAPHS = os.path.join(os.path.dirname(__file__), "results", "")
 
 
 def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activation_fun=sigmoid, net_shape=(4, 4, 3),
-                 learning_rate=0.5, plot=False, title="", random_state=42):
+                 learning_rate=0.5, plot=False, title="", random_state=42, ordered=False):
     print("Creando red neuronal")
     print("Parámetros:")
     print(f"activation function: {activation_fun.__name__}, net_shape={net_shape}, learning_rate={learning_rate}")
@@ -23,6 +23,16 @@ def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activat
 
     X_train, X_test, y_train, y_test = train_test_split(
         inputs, outputs, test_size=0.30, random_state=random_state)
+
+    if ordered:
+        X_train = []
+        y_train = []
+        X_train.extend(inputs[:16])
+        X_train.extend(inputs[50:66])
+        X_train.extend(inputs[100:116])
+        y_train.extend(outputs[:16])
+        y_train.extend(outputs[50:66])
+        y_train.extend(outputs[100:116])
 
     errors = []
 
