@@ -14,7 +14,7 @@ def process_iris(iris_filename="data/iris-data.txt", n_experiments=2000, activat
                  learning_rate=0.5, plot=False, title="", random_state=42):
     print("Creando red neuronal")
     print("Parámetros:")
-    print(f"activarion function: {activation_fun.__name__}, net_shape={net_shape}, learning_rate={learning_rate}")
+    print(f"activation function: {activation_fun.__name__}, net_shape={net_shape}, learning_rate={learning_rate}")
 
     inputs, outputs, min_in, max_in = process_iris_file(iris_filename)
     network = net_constructor(net_shape, activation_fun)
