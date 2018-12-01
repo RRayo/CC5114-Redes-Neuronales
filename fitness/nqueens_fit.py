@@ -1,6 +1,6 @@
 import numpy as np
 
-from fitness import Fitness
+from fitness.fitness import Fitness
 
 
 class NQueensFit(Fitness):
@@ -21,16 +21,3 @@ class NQueensFit(Fitness):
         for i in range(len(population)):
             fit.append(self.evaluate_fitness(population[i]))
         return fit
-
-
-from pop_nqueens import PopNQueens
-
-p = PopNQueens(4, 4)
-ind = p.new_individual()
-print(ind)
-
-f = NQueensFit()
-fit = f.evaluate_fitness(ind)
-print(fit)
-fit = f.evaluate_fitness([1,2,3,1])
-print(fit)

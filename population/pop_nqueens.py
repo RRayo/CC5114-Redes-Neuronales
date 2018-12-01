@@ -5,7 +5,7 @@ from population.population import Population
 
 class PopNQueens(Population):
 
-    def __init__(self, pop_size, len_genes):
+    def __init__(self, pop_size, genes, len_genes):
         Population.__init__(self, size=pop_size, genes=[], len_genes=len_genes)
 
     def new_individual(self):

@@ -43,7 +43,7 @@ class GeneticAlgorithm:
         fitness_max_history.append(np.max(fitness))
         fitness_mean_history.append(np.mean(fitness))
 
-        counter = 0
+        counter = 1
         while f.max_fitness not in fitness and counter < 200:
             population = s.best_quartile(population, fitness)
             r.reproduce(population)
