@@ -5,9 +5,9 @@ from selection.selection import Selection
 
 
 
-def main():
+def main(N, mutation_rate):
     N = 5
-    pop_size = 5
+    pop_size = N*10
     # mutation_rate = 0.1
     mutation_rate = 0.3
     opciones = [0, 1]
