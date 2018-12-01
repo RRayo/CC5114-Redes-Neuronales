@@ -48,6 +48,7 @@ def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rat
     print("Tiempo: ", time)
 
     # N-Queens
+    print("\n--------------------------------------------")
     print("\nN-Queens")
 
     len_genes = 8
