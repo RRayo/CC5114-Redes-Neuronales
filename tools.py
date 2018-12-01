@@ -9,5 +9,6 @@ def sortPopulation(population, fitness_array):
     return population[inds].tolist()
 
 
-# def graficar
+def graficar(rango, data, problema, mutation_rate=-1, pop_size=-1):
+
 
