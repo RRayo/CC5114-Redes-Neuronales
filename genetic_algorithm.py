@@ -2,15 +2,8 @@ from time import time
 
 import numpy as np
 
-from fitness.bits_fitness import BitFitness
-from population.population import Population
-from reproduction.reproduction import Reproduction
-from selection.selection import Selection
-
-
 class GeneticAlgorithm:
 
-    # def __init__(self, len_genes, genes, population_size, mutation_rate, population_class, fitness_class, selection_class, reproduction_class, ref_individual):
     def __init__(self, len_genes, genes, population_size, mutation_rate, max_fitness):
         self.len_genes = len_genes
         self.genes = genes
