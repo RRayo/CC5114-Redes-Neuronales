@@ -9,3 +9,5 @@ def sortPopulation(population, fitness_array):
     return population[inds].tolist()
 
 
+# def graficar
+

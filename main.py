@@ -1,61 +1,36 @@
 from fitness.bits_fitness import BitFitness
+from genetic_algorithm import GeneticAlgorithm
 from population.population import Population
 from reproduction.reproduction import Reproduction
 from selection.selection import Selection
 
 
+def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rate, pop_size
+    # BITS
 
-def main(N, mutation_rate):
-    N = 5
-    pop_size = N*10
-    # mutation_rate = 0.1
-    mutation_rate = 0.3
-    opciones = [0, 1]
-    # opciones = "qwertyuiopasdfghjklzxcvbnm"
-    # opciones = "bvcasdqwert"
+    len_genes = 5
+    genes = [0, 1]
+    pop_size = len_genes * 2
+    mutation_rate = 0.1
+    max_fit = 5  # todos son iguales al individuo original
+    ga_bits = GeneticAlgorithm(len_genes, genes, pop_size, mutation_rate, max_fit)
+    fitness_max_history, fitness_mean_history, counter, time = ga_bits.run(Population, BitFitness, Selection,
+                                                                           Reproduction, ref_individual=True)
 
-    p = Population(pop_size, opciones, N)
-    f = BitFitness()  # TODO generalizar en función superior
-    s = Selection()
-    r = Reproduction(mutation_rate, opciones, pop_size)
+    print(fitness_max_history, fitness_mean_history, counter, time)
 
-    individuo = p.new_individual()
-    # individuo = list("cabra")
-    print("Original:", individuo)
+    # STRING
 
-    # inicializar población
-    population = p.new_population()
+    len_genes = 5
+    genes = list("qwertyuiopasdfghjklzxcvbnm")
+    pop_size = len_genes * 10
+    mutation_rate = 0.1
+    max_fit = 5  # todos son iguales al individuo original
+    ga_string = GeneticAlgorithm(len_genes, genes, pop_size, mutation_rate, max_fit)
+    fitness_max_history, fitness_mean_history, counter, time = ga_string.run(Population, BitFitness, Selection,
+                                                                           Reproduction, ref_individual=True)
 
-    print("Población:", len(population))
-    for pop in population:
-        print(pop)
-
-    # seleccionar poblacion
-    fitness = f.fitness_population(individuo, population)
-    print("Fitness:")
-    print(fitness)
-
-    while 5 not in fitness:  # TODO generalizar
-        # seleccionar
-        population = s.best_quartile(population, fitness)
-
-        # reproduccion
-        r.reproduce(population)
-
-        # recalcular fitness
-        fitness = f.fitness_population(individuo, population)
-        print(fitness)
-
-    print("Resultado")
-    print(population[fitness.index(5)])
-
-
-# a = [1, 2, 3, 4]
-# b = ["a", "b", "c", "d"]
-# s = crossover(a, b)
-# print(s)
-# mutacion(a, 0.1, b)
-# print(a)
+    print(fitness_max_history, fitness_mean_history, counter, time)
 
 
 main()
