@@ -1,7 +1,7 @@
-from bits_fitness import BitFitness
-from population import Population
-from reproduction import Reproduction
-from selection import Selection
+from fitness.bits_fitness import BitFitness
+from population.population import Population
+from reproduction.reproduction import Reproduction
+from selection.selection import Selection
 
 
 
