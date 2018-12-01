@@ -31,7 +31,6 @@ class GeneticAlgorithm:
         individual = None
         if ref_individual:
             individual = p.new_individual()
-            print(individual)
 
         population = p.new_population()
 
@@ -57,6 +56,5 @@ class GeneticAlgorithm:
             fitness_max_history.append(np.max(fitness))
             fitness_mean_history.append(np.mean(fitness))
 
-        print(population[fitness.index(max(fitness))])
 
         return fitness_max_history, fitness_mean_history, counter, time() - init_time

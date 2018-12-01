@@ -16,11 +16,3 @@ class PopNQueens(Population):
                 r = randint(0, self.len_genes - 1)
             individual.append(r)
         return individual
-
-
-# p = PopNQueens(100, 6)
-# ind = p.new_individual()
-# pop = p.new_population()
-#
-# print(ind)
-# print(pop)
