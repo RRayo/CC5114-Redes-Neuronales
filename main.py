@@ -73,11 +73,9 @@ def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rat
                                                                                  Reproduction, ref_individual=False)
 
         graficar(range(len(fitness_max_history)), fitness_max_history, f"N-Queens {len_genes} (max_fit)",
-                 "Generaciones",
-                 "Max fitness", mutation_rate=mutation_rate, pop_size=pop_size, tipo=3)
+                 "Generaciones", "Max fitness", mutation_rate=mutation_rate, pop_size=pop_size, tipo=3)
         graficar(range(len(fitness_mean_history)), fitness_mean_history, f"N-Queens {len_genes} (mean_fit)",
-                 "Generaciones",
-                 "Mean fitness", mutation_rate=mutation_rate, pop_size=pop_size, tipo=3)
+                 "Generaciones", "Mean fitness", mutation_rate=mutation_rate, pop_size=pop_size, tipo=3)
         print("Generaciones: ", counter)
         print("Tiempo: ", time)
         print()
@@ -95,11 +93,9 @@ def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rat
                                                                                  Reproduction, ref_individual=False)
 
         graficar(range(len(fitness_max_history)), fitness_max_history, f"N-Queens {len_genes} (max_fit)",
-                 "Generaciones",
-                 "Max fitness", mutation_rate=mutation_rate, pop_size=pop_size, tipo=3)
+                 "Generaciones", "Max fitness", mutation_rate=mutation_rate, pop_size=pop_size, tipo=3)
         graficar(range(len(fitness_mean_history)), fitness_mean_history, f"N-Queens {len_genes} (mean_fit)",
-                 "Generaciones",
-                 "Mean fitness", mutation_rate=mutation_rate, pop_size=pop_size, tipo=3)
+                 "Generaciones", "Mean fitness", mutation_rate=mutation_rate, pop_size=pop_size, tipo=3)
         print("Generaciones: ", counter)
         print("Tiempo: ", time)
         print()
@@ -107,14 +103,14 @@ def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rat
         generations_mutation.append(counter)
 
     graficar(range(len(time_pop)), time_pop, "Tiempo poblaciones", xlabel="Poblaciones", ylabel="Tiempo", tipo=3,
-             ticks=pop_array, plot=True)
-    graficar(range(len(time_mutation)), time_mutation, "Tiempo mutations_rates", xlabel="Mutation rates", ylabel="Tiempo",
-             tipo=3, ticks=mutation_array, plot=True)
+             ticks=pop_array)
+    graficar(range(len(time_mutation)), time_mutation, "Tiempo mutations_rates", xlabel="Mutation rates",
+             ylabel="Tiempo", tipo=3, ticks=mutation_array)
 
     graficar(range(len(generations_pop)), generations_pop, "Generaciones poblaciones", xlabel="Poblaciones",
-             ylabel="Generaciones", tipo=3, ticks=pop_array, plot=True)
+             ylabel="Generaciones", tipo=3, ticks=pop_array)
     graficar(range(len(generations_mutation)), generations_mutation, "Generaciones mutations_rates",
-             xlabel="Mutation rates", ylabel="Generaciones", tipo=3, ticks=mutation_array, plot=True)
+             xlabel="Mutation rates", ylabel="Generaciones", tipo=3, ticks=mutation_array)
 
 
 main()
