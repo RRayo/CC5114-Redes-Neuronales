@@ -15,7 +15,8 @@ def sortPopulation(population, fitness_array):
     return population[inds].tolist()
 
 
-def graficar(rango, data, problema, xlabel, ylabel, tipo=1, mutation_rate=-1, pop_size=-1, ticks=False, plot=False):
+def graficar(rango, data, problema, xlabel, ylabel, tipo=1, mutation_rate=-1, pop_size=-1, ticks=False, save=True,
+             plot=False):
     if tipo == 1:
         plt.plot(rango, data)
     elif tipo == 2:
@@ -37,7 +38,8 @@ def graficar(rango, data, problema, xlabel, ylabel, tipo=1, mutation_rate=-1, po
     else:
         file_name = problema + ".jpg"
     file_name = re.sub("[\s_-]+", "", file_name)
-    plt.savefig(FOLDER_GRAPHS + file_name)
+    if save:
+        plt.savefig(FOLDER_GRAPHS + file_name)
     if plot:
         plt.show()
     plt.close()
