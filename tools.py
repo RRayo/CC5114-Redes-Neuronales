@@ -1,7 +1,8 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import os
 import re
+
+import matplotlib.pyplot as plt
+import numpy as np
 
 FOLDER_GRAPHS = os.path.join(os.path.dirname(__file__), "results", "")
 
@@ -24,14 +25,18 @@ def graficar(rango, data, problema, xlabel, ylabel, tipo=1, mutation_rate=-1, po
         if ticks:
             plt.xticks(rango, ticks)
 
-    if mutation_rate>0 and pop_size>0:
+    if mutation_rate > 0 and pop_size > 0:
         plt.title(f"Problema {problema}, mutation_rate={mutation_rate} ,pop_size={pop_size}")
     else:
         plt.title(f"{problema}")
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
-    file_name = problema + str(mutation_rate).replace(".", "") + str(pop_size) + ".jpg"
-    file_name = re.sub("[\s_]+", "", file_name)
+
+    if mutation_rate > 0 and pop_size > 0:
+        file_name = problema + str(mutation_rate).replace(".", "") + str(pop_size) + ".jpg"
+    else:
+        file_name = problema + ".jpg"
+    file_name = re.sub("[\s_-]+", "", file_name)
     plt.savefig(FOLDER_GRAPHS + file_name)
     if plot:
         plt.show()
