@@ -2,6 +2,7 @@ from time import time
 
 import numpy as np
 
+
 class GeneticAlgorithm:
 
     def __init__(self, len_genes, genes, population_size, mutation_rate, max_fitness):
@@ -48,6 +49,5 @@ class GeneticAlgorithm:
 
             fitness_max_history.append(np.max(fitness))
             fitness_mean_history.append(np.mean(fitness))
-
 
         return fitness_max_history, fitness_mean_history, counter, time() - init_time
