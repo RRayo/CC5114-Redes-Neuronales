@@ -1,6 +1,6 @@
-# README Tarea 2
+# README Tarea 3
 
-### Algoritmos Genéticos
+### Programación Genética
 
 Tarea que implementa algoritmos genéticos para encontrar soluciones al problema de las [N reinas](https://es.wikipedia.org/wiki/Problema_de_las_ocho_reinas).
 
