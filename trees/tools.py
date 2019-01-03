@@ -37,11 +37,29 @@ def fix_tree(tree, functions, terminals):
 
 def print_tree(tree):
     string = ""
-    string += str(tree[0])
     pila_nodos = [(0, 0)]
     while pila_nodos:
         nodo, altura = pila_nodos.pop()
-        string += "\t" * altura + str(tree[nodo])
+        if altura == 0:
+            string += str(tree[nodo]) + "\n"
+        else:
+
+            nodo_aux = nodo
+            string_nodo = ""
+            if nodo_aux%2 == 1:
+                string_nodo = "╚═══ " + str(tree[nodo]) + string_nodo
+            else:
+                string_nodo = "╠═══ " + str(tree[nodo]) + string_nodo
+            nodo_aux = (nodo_aux-1)//2
+            while nodo_aux > 0:
+                if nodo_aux % 2 == 1:
+                    string_nodo = "     " + string_nodo
+                else:
+                    string_nodo = "║    " + string_nodo
+                nodo_aux = (nodo_aux - 1) // 2
+
+            string += string_nodo + "\n"
+
         nodo_izq = 2 * nodo + 1
         nodo_der = 2 * nodo + 2
 
