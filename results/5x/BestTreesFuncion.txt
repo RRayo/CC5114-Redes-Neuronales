@@ -1,0 +1,3146 @@
+Gen:	1
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	2
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	3
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	4
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	5
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	6
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	7
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	8
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	9
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	10
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	11
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	12
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	13
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	14
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	15
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	16
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	17
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	18
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	19
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	20
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	21
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	22
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	23
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	24
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	25
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1008
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-735
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-516
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-345
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-216
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-123
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-60
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-21
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	0
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	9
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	12
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	15
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	24
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	45
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	84
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	147
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	240
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	369
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	540
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	759
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1032
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 12
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
+Gen:	26
+
+	Variable:	x
+	Valor:	-10
+	Esperado:	-1010
+	Obtenido:	-1010
+
+	Variable:	x
+	Valor:	-9
+	Esperado:	-737
+	Obtenido:	-737
+
+	Variable:	x
+	Valor:	-8
+	Esperado:	-518
+	Obtenido:	-518
+
+	Variable:	x
+	Valor:	-7
+	Esperado:	-347
+	Obtenido:	-347
+
+	Variable:	x
+	Valor:	-6
+	Esperado:	-218
+	Obtenido:	-218
+
+	Variable:	x
+	Valor:	-5
+	Esperado:	-125
+	Obtenido:	-125
+
+	Variable:	x
+	Valor:	-4
+	Esperado:	-62
+	Obtenido:	-62
+
+	Variable:	x
+	Valor:	-3
+	Esperado:	-23
+	Obtenido:	-23
+
+	Variable:	x
+	Valor:	-2
+	Esperado:	-2
+	Obtenido:	-2
+
+	Variable:	x
+	Valor:	-1
+	Esperado:	7
+	Obtenido:	7
+
+	Variable:	x
+	Valor:	0
+	Esperado:	10
+	Obtenido:	10
+
+	Variable:	x
+	Valor:	1
+	Esperado:	13
+	Obtenido:	13
+
+	Variable:	x
+	Valor:	2
+	Esperado:	22
+	Obtenido:	22
+
+	Variable:	x
+	Valor:	3
+	Esperado:	43
+	Obtenido:	43
+
+	Variable:	x
+	Valor:	4
+	Esperado:	82
+	Obtenido:	82
+
+	Variable:	x
+	Valor:	5
+	Esperado:	145
+	Obtenido:	145
+
+	Variable:	x
+	Valor:	6
+	Esperado:	238
+	Obtenido:	238
+
+	Variable:	x
+	Valor:	7
+	Esperado:	367
+	Obtenido:	367
+
+	Variable:	x
+	Valor:	8
+	Esperado:	538
+	Obtenido:	538
+
+	Variable:	x
+	Valor:	9
+	Esperado:	757
+	Obtenido:	757
+
+	Variable:	x
+	Valor:	10
+	Esperado:	1030
+	Obtenido:	1030
+
++
+╠═══ +
+║    ╠═══ x
+║    ╚═══ +
+║         ╠═══ 10
+║         ╚═══ x
+╚═══ *
+     ╠═══ *
+     ║    ╠═══ x
+     ║    ╚═══ x
+     ╚═══ x
+
+
+
