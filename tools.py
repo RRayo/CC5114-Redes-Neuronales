@@ -9,10 +9,12 @@ FOLDER_GRAPHS = os.path.join(os.path.dirname(__file__), "results", "")
 
 # ordenar poblacion por el fitness del arreglo
 def sortPopulation(population, fitness_array):
-    population = np.array(population)
     fitness_array = np.array(fitness_array)
     inds = fitness_array.argsort()
-    return population[inds].tolist()
+    sorted_pop = []
+    for i in inds:
+        sorted_pop.append(population[i])
+    return sorted_pop
 
 
 def graficar(rango, data, problema, xlabel, ylabel, tipo=1, mutation_rate=-1, pop_size=-1, ticks=False, save=True,

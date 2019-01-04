@@ -15,21 +15,19 @@ class Reproduction:
 
         while len(population) < self.population_size:
             padre1, padre2 = sample(actual_population, 2)
-            hijo = crossover(padre1, padre2)
-            mutacion(hijo, self.mutation_rate, self.genes)
+            hijo = self.crossover(padre1, padre2)
+            self.mutacion(hijo, self.mutation_rate, self.genes)
             population.append(hijo)
 
+    # cruzar 2 padres al azar
+    def crossover(self, padre1, padre2):
+        r = randint(1, len(padre1) - 1)  # para que tenga al menos algo de cada padre
+        cross = padre1[:r]
+        cross = np.append(cross, padre2[r:])
+        return cross.tolist()
 
-# cruzar 2 padres al azar
-def crossover(padre1, padre2):
-    r = randint(1, len(padre1) - 1)  # para que tenga al menos algo de cada padre
-    cross = padre1[:r]
-    cross = np.append(cross, padre2[r:])
-    return cross.tolist()
-
-
-# mutar al azar un individuo
-def mutacion(individuo, mutation_rate, opciones):
-    for i in range(len(individuo)):
-        if random() < mutation_rate:
-            individuo[i] = opciones[randrange(len(opciones))]
+    # mutar al azar un individuo
+    def mutacion(self, individuo, mutation_rate, opciones):
+        for i in range(len(individuo)):
+            if random() < mutation_rate:
+                individuo[i] = opciones[randrange(len(opciones))]

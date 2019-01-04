@@ -2,8 +2,11 @@ import operator
 import random
 
 
-def create_rand_tree(height, functions, terminals):
-    n = 2 ** (height + 1) - 1
+def create_rand_tree(height, functions, terminals, size=None):
+    if size:
+        n = size
+    else:
+        n = 2 ** (height + 1) - 1
     tree = []
     for i in range(1, n + 1):
         if n < 4 or i / n * 2 < random.random():
@@ -28,6 +31,18 @@ def fix_tree(tree, functions, terminals):
                     if random.random() < 0.8:
                         tree[2 * i + 2] = random.choice(functions)
 
+                if tree[2 * i + 1] is None:
+                    if random.random() < 0.5:
+                        tree[2 * i + 1] = random.choice(functions)
+                    else:
+                        tree[2 * i + 1] = random.choice(terminals)
+
+                if tree[2 * i + 2] is None:
+                    if random.random() < 0.5:
+                        tree[2 * i + 2] = random.choice(functions)
+                    else:
+                        tree[2 * i + 2] = random.choice(terminals)
+
         else:  # si es terminal
             if 2 * i + 2 < len(tree) or tree[i] is None:  # si puede tener hijos
                 valor = tree[i]
@@ -46,11 +61,11 @@ def print_tree(tree):
 
             nodo_aux = nodo
             string_nodo = ""
-            if nodo_aux%2 == 1:
+            if nodo_aux % 2 == 1:
                 string_nodo = "╚═══ " + str(tree[nodo]) + string_nodo
             else:
                 string_nodo = "╠═══ " + str(tree[nodo]) + string_nodo
-            nodo_aux = (nodo_aux-1)//2
+            nodo_aux = (nodo_aux - 1) // 2
             while nodo_aux > 0:
                 if nodo_aux % 2 == 1:
                     string_nodo = "     " + string_nodo
@@ -111,7 +126,7 @@ def delete_subtree(tree, nodo, mutar=False):
     return aux_tree
 
 
-def cross_tree(tree1, tree2, nodo):
+def cross_tree(tree1, tree2, nodo, functions, terminals):
     if nodo >= len(tree1) or nodo >= len(tree2):
         return -1
     sub_tree2 = copy_tree(tree2, nodo)
@@ -128,13 +143,15 @@ def cross_tree(tree1, tree2, nodo):
         if posicion_der < len(tree1):
             pile_position.insert(0, posicion_der)
 
+    fix_tree(tree1_mod, functions, terminals)
+
     return tree1_mod
 
 
 operations = {"+": operator.add, "-": operator.sub, "*": operator.mul}
 
 
-def eval_tree(tree, terminals={}):
+def eval_tree(tree, terminals={}, operations=operations):
     aux_tree = list(tree)
     for i in range(len(aux_tree) - 1, 0, -1):
         if aux_tree[i] is None or i % 2 == 1:
@@ -145,9 +162,17 @@ def eval_tree(tree, terminals={}):
         val_der = aux_tree[i]
 
         if type(val_izq) == str:
-            val_izq = terminals[val_izq]
+            if val_izq in terminals:
+                val_izq = terminals[val_izq]
+            else:
+                raise Exception("WTF")
+                val_izq = int(val_izq)
         if type(val_der) == str:
-            val_der = terminals[val_der]
+            if val_der in terminals:
+                val_der = terminals[val_der]
+            else:
+                raise Exception("WTF")
+                val_der = int(val_der)
 
         valor = operations[op_padre](val_izq, val_der)
         aux_tree[nodo_padre] = valor
@@ -155,33 +180,42 @@ def eval_tree(tree, terminals={}):
     return aux_tree[0]
 
 
-tree = range(14)
-copy = copy_tree(tree, 1)
-print(copy)
+# tree = range(14)
+# copy = copy_tree(tree, 1)
+# print(copy)
+#
+# rama = [0, None, 2, None, None, 5, 6, None, None, None, None, None, 12, 13]
+# copy = copy_tree(rama, 2)
+# print(copy)
+#
+# tree2 = range(14)
+# deleted = delete_subtree(tree2, 4)
+# print(deleted)
+#
+# tree3_1 = range(14)
+# tree3_2 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"]
+# cross = cross_tree(tree3_1, tree3_2, 3)
+# print(cross)
+#
+# tree_op = ["+", "*", "-", "-", 3, 4, "+", 1, 2, None, None, None, None, 2, 3]  # (+ (* (- 1 2) 3) (- 4 (+ 2 3))) == -4
+# eval = eval_tree(tree_op)
+# print(eval)
+#
+# rand_tree = create_rand_tree(3, list(operations.keys()), [1, 2, 3, 4, 5])
+# print(rand_tree)
+# print(eval_tree(rand_tree))
+#
+# # tree_op2 = ['-', '+', 1, 5, '+', None, 4, 2, 5, 5, 5, 4, 4, 5]
+# # eval2 = eval_tree(tree_op2)
+# # print(eval2)
+#
+# print_tree(rand_tree)
 
-rama = [0, None, 2, None, None, 5, 6, None, None, None, None, None, 12, 13]
-copy = copy_tree(rama, 2)
-print(copy)
-
-tree2 = range(14)
-deleted = delete_subtree(tree2, 4)
-print(deleted)
-
-tree3_1 = range(14)
-tree3_2 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"]
-cross = cross_tree(tree3_1, tree3_2, 3)
-print(cross)
-
-tree_op = ["+", "*", "-", "-", 3, 4, "+", 1, 2, None, None, None, None, 2, 3]  # (+ (* (- 1 2) 3) (- 4 (+ 2 3))) == -4
-eval = eval_tree(tree_op)
-print(eval)
-
-rand_tree = create_rand_tree(3, list(operations.keys()), [1, 2, 3, 4, 5])
-print(rand_tree)
-print(eval_tree(rand_tree))
-
-# tree_op2 = ['-', '+', 1, 5, '+', None, 4, 2, 5, 5, 5, 4, 4, 5]
-# eval2 = eval_tree(tree_op2)
-# print(eval2)
-
-print_tree(rand_tree)
+"""
+wrong = ['+', '-', '-', '*', '*', '+', '*', '*', '-', '-', '*', '+', '-', '*', '*', None, None, 7, 7, 3, 3, 7, 3, 19, 7,
+         3,
+         19, 7, 3, 3, 7]
+print_tree(wrong)
+fix_tree(wrong, ["+", "-", "*"], [19, 7, 3, 40])
+print_tree(wrong)
+"""

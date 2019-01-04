@@ -12,7 +12,8 @@ class GeneticAlgorithm:
         self.mutation_rate = mutation_rate
         self.max_fitness = max_fitness
 
-    def run(self, population_class, fitness_class, selection_class, reproduction_class, ref_individual=False):
+    def run(self, population_class, fitness_class, selection_class, reproduction_class, ref_individual=False,
+            max_generations=200):
         init_time = time()
         fitness_max_history = []
         fitness_mean_history = []
@@ -37,7 +38,7 @@ class GeneticAlgorithm:
         fitness_mean_history.append(np.mean(fitness))
 
         counter = 1
-        while f.max_fitness not in fitness and counter < 200:
+        while f.max_fitness not in fitness and counter < max_generations:
             population = s.best_quartile(population, fitness)
             r.reproduce(population)
             if ref_individual:

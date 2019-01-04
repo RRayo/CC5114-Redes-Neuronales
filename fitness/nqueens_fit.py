@@ -10,8 +10,8 @@ class NQueensFit(Fitness):
         _, counts_elements = np.unique(individual, return_counts=True)
         for c in counts_elements:
             error += c - 1  # no contar primera aparicion
-        for i in range(len(individual)-1):
-            for j in range(i+1, len(individual)):
+        for i in range(len(individual) - 1):
+            for j in range(i + 1, len(individual)):
                 if abs(individual[i] - individual[j]) == abs(i - j):
                     error += 1
         return 1 / error
