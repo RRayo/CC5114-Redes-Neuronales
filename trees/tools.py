@@ -3,6 +3,8 @@ import random
 
 
 def create_rand_tree(height, functions, terminals, size=None):
+    if type(terminals) == dict:
+        terminals = list(terminals.keys())
     if size:
         n = size
     else:
@@ -18,6 +20,8 @@ def create_rand_tree(height, functions, terminals, size=None):
 
 
 def fix_tree(tree, functions, terminals):
+    if type(terminals) == dict:
+        terminals = list(terminals.keys())
     for i in range(len(tree)):
         if tree[i] not in terminals and tree[i] is not None:  # si es funcion
             if 2 * i + 2 >= len(tree):  # si no tiene posibles hijos
@@ -50,7 +54,7 @@ def fix_tree(tree, functions, terminals):
                 tree[i] = valor
 
 
-def print_tree(tree):
+def print_tree(tree, print_flag=True):
     string = ""
     pila_nodos = [(0, 0)]
     while pila_nodos:
@@ -84,7 +88,9 @@ def print_tree(tree):
         if nodo_der < len(tree) and tree[nodo_der]:
             pila_nodos.append((nodo_der, altura + 1))
 
-    print(string)
+    if print_flag:
+        print(string)
+    return string
 
 
 def copy_tree(tree, nodo):
@@ -151,7 +157,7 @@ def cross_tree(tree1, tree2, nodo, functions, terminals):
 operations = {"+": operator.add, "-": operator.sub, "*": operator.mul}
 
 
-def eval_tree(tree, terminals={}, operations=operations):
+def eval_tree(tree, dict_terminals={}, operations=operations):
     aux_tree = list(tree)
     for i in range(len(aux_tree) - 1, 0, -1):
         if aux_tree[i] is None or i % 2 == 1:
@@ -162,20 +168,21 @@ def eval_tree(tree, terminals={}, operations=operations):
         val_der = aux_tree[i]
 
         if type(val_izq) == str:
-            if val_izq in terminals:
-                val_izq = terminals[val_izq]
+            if val_izq in dict_terminals:
+                val_izq = dict_terminals[val_izq]
             else:
                 raise Exception("WTF")
-                val_izq = int(val_izq)
         if type(val_der) == str:
-            if val_der in terminals:
-                val_der = terminals[val_der]
+            if val_der in dict_terminals:
+                val_der = dict_terminals[val_der]
             else:
                 raise Exception("WTF")
-                val_der = int(val_der)
 
         valor = operations[op_padre](val_izq, val_der)
         aux_tree[nodo_padre] = valor
+
+    if aux_tree[0] in dict_terminals:
+        aux_tree[0] = dict_terminals[aux_tree[0]]
 
     return aux_tree[0]
 
@@ -219,3 +226,7 @@ print_tree(wrong)
 fix_tree(wrong, ["+", "-", "*"], [19, 7, 3, 40])
 print_tree(wrong)
 """
+
+# rand_tree = create_rand_tree(3, list(operations.keys()), [1, 2, 3, 4, 5])
+# print(rand_tree)
+# print_tree(rand_tree)

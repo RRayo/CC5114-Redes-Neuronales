@@ -13,10 +13,11 @@ class GeneticAlgorithm:
         self.max_fitness = max_fitness
 
     def run(self, population_class, fitness_class, selection_class, reproduction_class, ref_individual=False,
-            max_generations=200):
+            max_generations=200, default_max_fit=1):
         init_time = time()
         fitness_max_history = []
         fitness_mean_history = []
+        best_individuals = []
 
         p = population_class(self.population_size, self.genes, self.len_genes)
         f = fitness_class(self.max_fitness)
@@ -36,9 +37,11 @@ class GeneticAlgorithm:
 
         fitness_max_history.append(np.max(fitness))
         fitness_mean_history.append(np.mean(fitness))
+        best_individuals.append(population[fitness.index(np.max(fitness))])
 
         counter = 1
-        while f.max_fitness not in fitness and counter < max_generations:
+
+        while default_max_fit not in fitness and counter < max_generations:
             population = s.best_quartile(population, fitness)
             r.reproduce(population)
             if ref_individual:
@@ -50,5 +53,6 @@ class GeneticAlgorithm:
 
             fitness_max_history.append(np.max(fitness))
             fitness_mean_history.append(np.mean(fitness))
+            best_individuals.append(population[fitness.index(np.max(fitness))])
 
-        return fitness_max_history, fitness_mean_history, counter, time() - init_time
+        return best_individuals, fitness_max_history, fitness_mean_history, counter, time() - init_time

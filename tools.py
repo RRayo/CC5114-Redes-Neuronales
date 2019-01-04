@@ -4,6 +4,8 @@ import re
 import matplotlib.pyplot as plt
 import numpy as np
 
+from trees.tools import print_tree, eval_tree
+
 FOLDER_GRAPHS = os.path.join(os.path.dirname(__file__), "results", "")
 
 
@@ -45,3 +47,29 @@ def graficar(rango, data, problema, xlabel, ylabel, tipo=1, mutation_rate=-1, po
     if plot:
         plt.show()
     plt.close()
+
+
+def write_trees(trees, title, dict_terminales={}):
+    with open(FOLDER_GRAPHS + str(title) + ".txt", "w", encoding="utf-8") as file:
+        for i in range(len(trees)):
+            file.write(f"Gen:\t{(i + 1)}\n\n")
+            valor = eval_tree(trees[i], dict_terminales)
+            if dict_terminales:
+                for k in dict_terminales.keys():
+                    file.write(f"\tVariable:\t{k}\n")
+                    file.write(f"\tValor:\t{dict_terminales[k]}\n")
+                file.write(f"\tResultado:\t{valor}\n")
+            else:
+                file.write(f"\tResultado:\t{valor}\n")
+            file.write(print_tree(trees[i], print_flag=False))
+            file.write("\n\n\n")
+
+
+def write_results(results_names, data, title):
+    with open(FOLDER_GRAPHS + str(title) + ".txt", "w", encoding="utf-8") as file:
+        for i in range(len(results_names)):
+            file.write(results_names[i])
+            file.write(" por experimento:\n")
+            file.write(str(data[i]))
+            file.write(f"\n\tPromedio:\t{(sum(data[i])/len(data[i]))}\n")
+            file.write("\n\n")
