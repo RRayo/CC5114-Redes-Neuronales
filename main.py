@@ -5,6 +5,8 @@ from reproduction.reprod_trees import ReprodTrees
 from selection.selection import Selection
 from tools import graficar, write_trees, write_results
 
+from random import sample
+
 
 def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rate, pop_size
 
@@ -42,20 +44,20 @@ def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rat
 
         if not fitness_max_best or len(fitness_max_best) > len(fitness_max_history):
             fitness_max_best = list(fitness_max_history)
-            fitness_mean_best = list(fitness_max_history)
+            fitness_mean_best = list(fitness_mean_history)
             best_trees_global = list(best_trees)
 
         if not fitness_max_worst or len(fitness_max_worst) < len(fitness_max_history):
             fitness_max_worst = list(fitness_max_history)
-            fitness_mean_worst = list(fitness_max_history)
+            fitness_mean_worst = list(fitness_mean_history)
             worst_trees_global = list(best_trees)
 
         generations_global.append(generations)
         time_global.append(time)
         print(f"\texp {i} listo")
 
-    write_trees(best_trees_global, "BestTreesCyL")
-    write_trees(worst_trees_global, "WorstTreesCyL")
+    write_trees(best_trees_global, "BestTreesCyL", max_fit)
+    write_trees(worst_trees_global, "WorstTreesCyL", max_fit)
     write_results(["Tiempo", "Generaciones"], [time_global, generations_global], "ResultsCyL")
 
     graficar(range(len(fitness_max_best)), fitness_max_best, "Trees - Cifras y Letras (fitness_max_best)\n",
@@ -80,11 +82,11 @@ def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rat
     print("TREES - Problema Funcion")
 
     funciones = ["+", "-", "*"]
-    terminales = ["x"]
+    terminales = ["x"]*10 + sample(range(100), 10)
 
     genes = (funciones, terminales)
 
-    funcion = lambda x: x**3 + x ** 2 + 2 * x
+    funcion = lambda x: x ** 3 + 2 * x + 10
 
     rango_fitness = range(-10, 11)
     fitness_array = []
@@ -110,20 +112,20 @@ def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rat
 
         if not fitness_max_best or len(fitness_max_best) > len(fitness_max_history):
             fitness_max_best = list(fitness_max_history)
-            fitness_mean_best = list(fitness_max_history)
+            fitness_mean_best = list(fitness_mean_history)
             best_trees_global = list(best_trees)
 
         if not fitness_max_worst or len(fitness_max_worst) < len(fitness_max_history):
             fitness_max_worst = list(fitness_max_history)
-            fitness_mean_worst = list(fitness_max_history)
+            fitness_mean_worst = list(fitness_mean_history)
             worst_trees_global = list(best_trees)
 
         generations_global.append(generations)
         time_global.append(time)
         print(f"\texp {i} listo")
 
-    write_trees(best_trees_global, "BestTreesFuncion", fitness_array[-1][0])
-    write_trees(worst_trees_global, "WorstTreesFuncion", fitness_array[-1][0])
+    write_trees(best_trees_global, "BestTreesFuncion", fitness_array)
+    write_trees(worst_trees_global, "WorstTreesFuncion", fitness_array)
     write_results(["Tiempo", "Generaciones"], [time_global, generations_global], "ResultsFuncion")
 
     graficar(range(len(fitness_max_best)), fitness_max_best, "Trees - Funcion (fitness_max_best)\n",
@@ -142,7 +144,6 @@ def main():  # TODO hacer clase/función que reciba los parámetros mutacion_rat
 
     print(f"Tiempo promedio:\t{sum(time_global)/len(time_global)}")
     print(f"Generaciones promedio:\t{sum(generations_global)/len(generations_global)}")
-
 
 
 main()
