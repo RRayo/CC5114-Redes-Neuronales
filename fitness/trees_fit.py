@@ -16,7 +16,8 @@ class TreesFit(Fitness):
             for terminal_dict, expected_val in self.max_fitness:
                 tree_value = eval_tree(individual, dict_terminals=terminal_dict)
                 error += abs(tree_value - expected_val)
-            error /= len(self.max_fitness)
+            if error != 1:
+                error /= len(self.max_fitness)
         else:
             raise Exception("Tipo erroneo de max_fitness: " + str(type(self.max_fitness)))
 
