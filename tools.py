@@ -49,18 +49,23 @@ def graficar(rango, data, problema, xlabel, ylabel, tipo=1, mutation_rate=-1, po
     plt.close()
 
 
-def write_trees(trees, title, dict_terminales={}):
+def write_trees(trees, title, expected):
     with open(FOLDER_GRAPHS + str(title) + ".txt", "w", encoding="utf-8") as file:
         for i in range(len(trees)):
             file.write(f"Gen:\t{(i + 1)}\n\n")
-            valor = eval_tree(trees[i], dict_terminales)
-            if dict_terminales:
-                for k in dict_terminales.keys():
-                    file.write(f"\tVariable:\t{k}\n")
-                    file.write(f"\tValor:\t{dict_terminales[k]}\n")
-                file.write(f"\tResultado:\t{valor}\n")
+
+            if type(expected) != int:
+                for dict_terminales, expected_val in expected:
+                    for k in dict_terminales.keys():
+                        file.write(f"\tVariable:\t{k}\n")
+                        file.write(f"\tValor:\t{dict_terminales[k]}\n")
+                    valor = eval_tree(trees[i], dict_terminales)
+                    file.write(f"\tEsperado:\t{expected_val}\n")
+                    file.write(f"\tObtenido:\t{valor}\n\n")
             else:
-                file.write(f"\tResultado:\t{valor}\n")
+                valor = eval_tree(trees[i])
+                file.write(f"\tEsperado:\t{expected}\n")
+                file.write(f"\tObtenido:\t{valor}\n\n")
             file.write(print_tree(trees[i], print_flag=False))
             file.write("\n\n\n")
 
